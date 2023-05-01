@@ -29,6 +29,12 @@
           </div>
         </div>
       </nav>
+      {% if success %}
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy User!</strong> Your Task Has Been Saved Successfully.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endif %}
       <div class="container my-3">
         <h2 class="text-center">Welcome to ToDos List - Add A Task</h2>
         <form action="/" method="POST">
